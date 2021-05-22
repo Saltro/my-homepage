@@ -9,3 +9,5 @@ before_install:
 - eval "$(ssh-agent -s)"
 - chmod 600 deploy_rsa
 - ssh-add deploy_rsa
+install: true
+script: true
