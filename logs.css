@@ -1,0 +1,68 @@
+@media (min-width: 768px) {
+  .log-card .version {
+  }
+
+  .log-card .content {
+  }
+}
+
+@media (max-width: 767px) {
+  .log-card .version {
+  }
+
+  .log-card .content {
+  }
+}
+
+.card {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.log-card {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  /* border: 1px black solid; */
+  /* border-radius: 5px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.vertical-line {
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 80px;
+  top: 0;
+  background-color: #3F3F3F;
+}
+
+.head {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: #F0F0F0;
+  border-radius: 6px 6px 0 0;
+  border-top: 1px solid #3F3F3F;
+  border-right: 1px solid #3F3F3F;
+  border-bottom: 1px solid #A0A0A0;
+  border-left: 1px solid #3F3F3F;
+  font-size: 1.25rem;
+}
+
+.content {
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background-color: #F7F7F7;
+  border-radius: 0 0 6px 6px;
+  border-right: 1px solid #3F3F3F;
+  border-bottom: 1px solid #3F3F3F;
+  border-left: 1px solid #3F3F3F;
+  font-size: 0.9rem;
+}

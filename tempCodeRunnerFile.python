@@ -1,0 +1,13 @@
+n = int(input('输入数组长度：'))
+cntArr = []
+for i in range(n):
+    cntArr.append(0)
+length = 1
+while (length <= n):
+    left = 0
+    while (left + length <= n):
+        for i in (left, left+length):
+            cntArr[i] += 1
+        left += 1
+    length += 2
+print(cntArr)
