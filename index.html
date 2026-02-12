@@ -1,41 +1,101 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>SaltroPing 个人学习经验分享 - 我的主页</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-</head>
-<body>
-  <div class="card">
-    <div class="introduction">
-      <h1 class="hello">欢迎！</h1>
-      <h1 class="myname"><span>这里是 </span>Saltro</h1>
-      <div class="tags">
-        <h2>✏️ 大四 武汉大学电子商务专业在读</h2>
-        <h2>不擅长社交</h2>
-        <h2>日常是敲键盘 还很菜</h2>
-        <h2>没有做学术的天赋</h2>
-        <h2>曾经励志打 acm 的蒟蒻 不会 dp</h2>
-        <h2>💻 目前在学前端</h2>
-      </div>
-    </div>
-    <div class="profile">
-      <img src="./resources/avatar.jpg" class="avatar" alt="头像"></img>
-      <div class="line"></div>
-      <div class="links">
-        <a href="http://blog.saltroping.com">我的博客</a>
-        <a href="https://github.com/Saltro">GitHub</a>
-        <a href="https://leetcode-cn.com/u/saltro/">LeetCode</a>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <a href="https://beian.miit.gov.cn/">晋ICP备2021004725号</a>
-    <div class="separator"></div>
-    <a href="logs.html">v1.2 更新日志</a>
-  </div>
-</body>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SaltroPing 个人学习经验分享 - 我的主页</title>
+    <meta
+      name="description"
+      content="Saltro 的个人主页，记录学习路径、技术兴趣与公开链接。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  </head>
+  <body>
+    <div class="background-shape shape-one" aria-hidden="true"></div>
+    <div class="background-shape shape-two" aria-hidden="true"></div>
+
+    <main class="page">
+      <section class="hero card reveal">
+        <div class="hero-header">
+          <p class="kicker">saltro@homepage:~$ whoami</p>
+          <h1>你好，我是 <span>Saltro</span></h1>
+          <p class="subtitle">前端工程师 / 字节跳动 / 北京</p>
+        </div>
+        <div class="status-grid">
+          <article>
+            <h2>current_stage</h2>
+            <p>牛马上班中</p>
+          </article>
+          <article>
+            <h2>interest_vector</h2>
+            <p>前端架构 / 前端工程化 / 编程语言</p>
+          </article>
+          <article>
+            <h2>hobby</h2>
+            <p>游戏（MC、FPS）/ 音乐（后摇等）/ ACG</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="profile card reveal delay-1">
+        <div class="avatar-panel">
+          <img src="./resources/avatar.jpg" class="avatar" alt="Saltro 头像" />
+        </div>
+        <div class="intro-panel">
+          <h2>about_me.md</h2>
+          <ul>
+            <li>不擅长社交 致歉</li>
+            <li>上班前爱好写代码</li>
+            <li>日常痛苦敲键盘写文档</li>
+            <li>梦想是早日脱离上班苦海</li>
+            <li>没有做学术的天赋</li>
+            <li>曾经励志打 ACM 的蒟蒻 不会 dp</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="manifesto card reveal delay-2">
+        <p class="manifesto-label">saltro@homepage:~$ cat manifesto.txt</p>
+        <p class="manifesto-text">“为世界暂带来一些微小而有趣的东西”</p>
+      </section>
+
+      <section class="links card reveal delay-3" aria-label="个人链接">
+        <a
+          href="http://blog.saltroping.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >我的博客</a
+        >
+        <a
+          href="https://github.com/Saltro"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          href="https://leetcode-cn.com/u/saltro/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LeetCode</a
+        >
+      </section>
+    </main>
+
+    <footer class="footer reveal delay-4">
+      <a
+        href="https://beian.miit.gov.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >晋ICP备2021004725号</a
+      >
+    </footer>
+  </body>
 </html>
