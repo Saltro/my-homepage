@@ -4,54 +4,43 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SaltroPing 个人学习经验分享 - 我的主页</title>
+    <title>Saltro 的个人主页</title>
     <meta
       name="description"
       content="Saltro 的个人主页，记录学习路径、技术兴趣与公开链接。"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
-      rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
   </head>
   <body>
-    <div class="background-shape shape-one" aria-hidden="true"></div>
-    <div class="background-shape shape-two" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">跳到主要内容</a>
 
-    <main class="page">
-      <section class="hero card reveal">
-        <div class="hero-header">
-          <p class="kicker">saltro@homepage:~$ whoami</p>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Saltro 首页">Saltro.</a>
+        <nav class="site-nav" aria-label="页内导航">
+          <a href="#about">关于</a>
+          <a href="#links">链接</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page container">
+      <section class="hero" id="top">
+        <div class="hero-text">
           <h1>你好，我是 <span>Saltro</span></h1>
           <p class="subtitle">前端工程师 / 字节跳动 / 北京</p>
+          <p class="manifesto">“为世界暂带来一些微小而有趣的东西”</p>
         </div>
-        <div class="status-grid">
-          <article>
-            <h2>current_stage</h2>
-            <p>牛马上班中</p>
-          </article>
-          <article>
-            <h2>interest_vector</h2>
-            <p>前端架构 / 前端工程化 / 编程语言</p>
-          </article>
-          <article>
-            <h2>hobby</h2>
-            <p>游戏（MC、FPS）/ 音乐（后摇等）/ ACG</p>
-          </article>
+        <div class="hero-avatar">
+          <img src="./resources/avatar.jpg" class="avatar" width="477" height="476" decoding="async" alt="Saltro 的头像" />
         </div>
       </section>
 
-      <section class="profile card reveal delay-1">
-        <div class="avatar-panel">
-          <img src="./resources/avatar.jpg" class="avatar" alt="Saltro 头像" />
-        </div>
-        <div class="intro-panel">
-          <h2>about_me.md</h2>
-          <ul>
+      <section class="section" id="about">
+        <h2 class="section-title">关于</h2>
+        <div class="section-body">
+          <ul class="intro-list">
             <li>不擅长社交 致歉</li>
             <li>上班前爱好写代码</li>
             <li>日常痛苦敲键盘写文档</li>
@@ -62,67 +51,86 @@
         </div>
       </section>
 
-      <section class="manifesto card reveal delay-2">
-        <p class="manifesto-label">saltro@homepage:~$ cat manifesto.txt</p>
-        <p class="manifesto-text">“为世界暂带来一些微小而有趣的东西”</p>
+      <section class="section" id="status">
+        <h2 class="section-title">近况</h2>
+        <div class="section-body status-grid">
+          <div class="status-item">
+            <h3>工作</h3>
+            <p>牛马上班中</p>
+          </div>
+          <div class="status-item">
+            <h3>兴趣</h3>
+            <p>前端架构 / 前端工程化 / 编程语言</p>
+          </div>
+          <div class="status-item">
+            <h3>爱好</h3>
+            <p>游戏（MC、FPS）/ 音乐（后摇等）/ ACG</p>
+          </div>
+        </div>
       </section>
 
-      <section class="links card reveal delay-3" aria-label="个人链接">
-        <a
-          href="http://blog.saltroping.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          >我的博客</a
-        >
-        <a
-          href="https://github.com/Saltro"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-        <a
-          href="https://leetcode-cn.com/u/saltro/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LeetCode</a
-        >
+      <section class="section" id="links">
+        <h2 class="section-title">链接</h2>
+        <div class="section-body links-grid">
+          <a
+            class="link-card"
+            href="http://blog.saltroping.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-name">我的博客</span>
+            <span class="link-desc">blog.saltroping.com</span>
+            <span class="link-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a
+            class="link-card"
+            href="https://github.com/Saltro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-name">GitHub</span>
+            <span class="link-desc">github.com/Saltro</span>
+            <span class="link-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a
+            class="link-card"
+            href="https://leetcode-cn.com/u/saltro/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-name">LeetCode</span>
+            <span class="link-desc">leetcode-cn.com/u/saltro</span>
+            <span class="link-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
       </section>
 
-      <section class="friends card reveal delay-4" aria-label="友情链接">
-        <p class="friends-label">saltro@homepage:~$ ls /friends</p>
-        <a
-          class="friend-item"
-          href="https://blog.nowcent.cn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span class="friend-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" role="img">
-              <path
-                d="M10.59 13.41a1 1 0 0 0 1.41 1.41l3.54-3.53a3 3 0 0 0-4.24-4.24L9.88 8.46a1 1 0 1 0 1.41 1.42l1.42-1.42a1 1 0 0 1 1.42 1.42z"
-                fill="currentColor"
-              />
-              <path
-                d="M13.41 10.59a1 1 0 0 0-1.41-1.41L8.46 12.7a3 3 0 1 0 4.24 4.24l1.42-1.42a1 1 0 1 0-1.41-1.41l-1.42 1.41a1 1 0 1 1-1.42-1.41z"
-                fill="currentColor"
-              />
-            </svg>
-          </span>
-          <span class="friend-meta">
-            <span class="friend-title">orangeboyChen</span>
-            <span class="friend-subtitle">https://blog.nowcent.cn</span>
-          </span>
-        </a>
+      <section class="section" id="friends">
+        <h2 class="section-title">友联</h2>
+        <div class="section-body">
+          <a
+            class="friend-link"
+            href="https://blog.nowcent.cn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="friend-name">orangeboyChen</span>
+            <span class="friend-url">blog.nowcent.cn</span>
+            <span class="link-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
       </section>
     </main>
 
-    <footer class="footer reveal delay-5">
-      <a
-        href="https://beian.miit.gov.cn/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >晋ICP备2021004725号</a
-      >
+    <footer class="footer">
+      <div class="container">
+        <a
+          href="https://beian.miit.gov.cn/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >晋ICP备2021004725号</a
+        >
+      </div>
     </footer>
   </body>
 </html>
